@@ -24,38 +24,38 @@
     <!-- Шапка страницы -->
     <header class="header">
       <!-- Навигация сайта -->
-      <div class="container">
+      <div class="header-container container">
         <nav class="header-nav">
           <!-- Логотип -->
           <a href="./index.html" class="header-logo logo link"
-            >Web<span class="header-logo-stylization">Studio</span></a
+            >Web<span class="logo logo--dark">Studio</span></a
           >
 
           <!-- Меню сайта-->
-          <ul class="header-list list">
-            <li class="header-item">
+          <ul class="menu-list list">
+            <li class="menu-list__item">
               <a href="./index.html" class="header-link link current">Студия</a>
             </li>
-            <li class="header-item">
+            <li class="menu-list__item">
               <a href="./portfolio.html" class="header-link link">Портфолио</a>
             </li>
-            <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
+            <li class="menu-list__item"><a href="" class="header-link link">Контакты</a></li>
           </ul>
         </nav>
 
-        <ul class="contact-list list">
-          <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="header-link link">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="connect-list list">
+          <li class="connect-list__item">
+            <a href="mailto:info@devstudio.com" class="header-link link header-link--main-color">
+              <svg class="header-link__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
 
-          <li class="contact-item">
-            <a href="tel:+380961111111" class="header-link link">
-              <svg class="header-icon" width="10" height="16">
+          <li class="connect-list__item">
+            <a href="tel:+380961111111" class="header-link link header-link--main-color">
+              <svg class="header-link__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -64,6 +64,7 @@
         </ul>
       </div>
     </header>
+
     <main>
       <!-- "Герой" -->
       <section class="hero">
