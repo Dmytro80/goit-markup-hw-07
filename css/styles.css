@@ -427,20 +427,20 @@ address {
 
 /* -------------------CLIENTS------------------- */
 
-.clients-title {
+.clients__title {
   margin-bottom: var(--secondary-typical-margin);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: center;
 }
 
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: var(--typical-margin);
 }
 
-.clients-item-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -451,22 +451,19 @@ address {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 
-  transition: border-color 250ms var(--timing-function);
+  color: #afb1b8;
+
+  transition: border-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
-.clients-item-link:hover,
-.clients-item-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border-color: var(--accent-link-color);
+  color: var(--accent-link-color);
 }
 
-.clients-icon {
-  fill: #afb1b8;
-  transition: fill 250ms var(--timing-function);
-}
-
-.clients-item-link:hover .clients-icon,
-.clients-item-link:focus .clients-icon {
-  fill: var(--accent-link-color);
+.clients__icon {
+  fill: currentColor;
 }
 
 /* -------------------FOOTER------------------- */
