@@ -18,35 +18,36 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
   <body>
     <!-- Шапка страницы -->
     <header class="header">
       <!-- Навигация сайта -->
-      <div class="header-container container">
-        <nav class="header-nav">
+      <div class="header__container container">
+        <nav class="header__nav">
           <!-- Логотип -->
-          <a href="./index.html" class="header-logo logo link"
+          <a href="./index.html" class="header__logo logo link"
             >Web<span class="logo--dark">Studio</span></a
           >
 
           <!-- Меню сайта-->
           <ul class="menu-list list">
             <li class="menu-list__item">
-              <a href="./index.html" class="header-link link menu-list__current">Студия</a>
+              <a href="./index.html" class="header__link link menu-list--current">Студия</a>
             </li>
             <li class="menu-list__item">
-              <a href="./portfolio.html" class="header-link link">Портфолио</a>
+              <a href="./portfolio.html" class="header__link link">Портфолио</a>
             </li>
-            <li class="menu-list__item"><a href="" class="header-link link">Контакты</a></li>
+            <li class="menu-list__item"><a href="" class="header__link link">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="connect-list list">
           <li class="connect-list__item">
-            <a href="mailto:info@devstudio.com" class="header-link link header-link--main-color">
-              <svg class="header-link__icon" width="16" height="12">
+            <a href="mailto:info@devstudio.com" class="header__link link header__link--main-color">
+              <svg class="connect-list__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -54,8 +55,8 @@
           </li>
 
           <li class="connect-list__item">
-            <a href="tel:+380961111111" class="header-link link header-link--main-color">
-              <svg class="header-link__icon" width="10" height="16">
+            <a href="tel:+380961111111" class="header__link link header__link--main-color">
+              <svg class="connect-list__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -69,7 +70,7 @@
       <!-- "Герой" -->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
@@ -495,7 +496,7 @@
           </ul>
         </div>
 
-        <form class="subscription__form">
+        <form class="footer__form subscription">
           <div class="subscription__field">
             <p class="subscription__text">Подпишитесь на рассылку</p>
             <input class="subscription__input" type="email" name="email" placeholder="E-mail" />
@@ -512,7 +513,7 @@
 
     <!-- Модальное окно -->
 
-    <div class="modal__backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
